@@ -51,8 +51,8 @@ while True:
             raise Exception
         break
     except ValueError:
-        print("Нужно ввести число!")
+        print('Введите число')
     except Exception:
-        print("Неправильный диапазон!")
+        print('Неверный диапазон!')
 
 print(binary_search(array, element, 0,  len(array)))
