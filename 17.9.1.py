@@ -1,4 +1,4 @@
-array = [int(x) for x in input("Введите числа от 1 до 999 в любом порядке, через пробел:").split()]
+array = [int(x) for x in input('Введите числа от 1 до 999 в любом порядке, через пробел:').split()]
 def merge_sort(array):
     if len(array) < 2:
         return array[:]
@@ -46,12 +46,12 @@ def binary_search(array, element, left, right):
 
 while True:
     try:
-        element = int(input("Введите число от 1 до 999: "))
+        element = int(input('Введите число от 1 до 999: '))
         if element < 0 or element > 999:
             raise Exception
         break
     except ValueError:
-        print('Введите число')
+        print('Нужно ввести число')
     except Exception:
         print('Неверный диапазон!')
 
