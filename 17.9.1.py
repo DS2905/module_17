@@ -6,7 +6,7 @@ def merge_sort(array):
         middle = len(array) // 2
         left = merge_sort(array[:middle])
         right = merge_sort(array[middle:])
-        return merge(left, right)  #слияние
+        return merge(left, right)
 def merge(left, right):
     result = []
     i, j = 0, 0
@@ -32,8 +32,8 @@ def merge(left, right):
 print(merge_sort(array))
 
 def binary_search(array, element, left, right):
-    if left > right:  #если левая превысила правую,
-        return False  #элемент отсутствует
+    if left > right:  
+        return False #нет элемента
 
     middle = (right + left) // 2
     if array[middle] == element:
